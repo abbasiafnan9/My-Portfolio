@@ -1,5 +1,7 @@
 import React from 'react'
 import "./intro.css";
+import Profile from "../../img/profile.jpg"
+
 export default function Intro() {
     return (
         <div className="i">
@@ -27,7 +29,10 @@ export default function Intro() {
                     </div>
                 </div>
             </div>
-            <div className="i-right">right</div>
+            <div className="i-right">
+                <div className="i-bg"></div>
+            <img src={Profile} alt="" className="i-img" />
+            </div>
         </div>
     )
 }
